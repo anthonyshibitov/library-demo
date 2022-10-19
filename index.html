@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="source.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>MY LIBRARY 📚</header>
+    <main>
+        <div class="modal-open-wrapper">
+            <input type="button" value="Add book 📕" id="modal-open" class="modal-btn">
+            <input type="button" value="Clear all 🥺" id="modal-clear" class="modal-btn">
+        </div>
+        <div class="modal-container" id="modal_container">
+            <div class="modal">
+                <form>
+                    <div class="grid-container">
+                        <label for="title">Book Title</label>
+                        <input type="text" id="title" name="title">
+                        <label for="author">Book Author</label>
+                        <input type="text" id="author" name="author">
+                        <label for="read">Read?</label>
+                        <input type="checkbox" name="read" id="read">
+                    </div>
+                    <div class="grid-container-button">
+                        <input type="button" value="confirm" id="modal-submit">
+                        <input type="button" value="close" id="modal-close">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="card-container" id="card-container">
+        </div>
+    </main>
+</body>
+</html>
